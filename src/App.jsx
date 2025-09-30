@@ -144,7 +144,7 @@ const App = () => {
               {/* Card 6 */}
               <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
                 <img
-                  src="gwen.jpg"
+                  src="jgwen.png"
                   alt=" Jezimiel Gwen Panganiban"
                   className="w-32 h-32 object-cover border rounded-full mb-4"
                 />
@@ -152,7 +152,7 @@ const App = () => {
                   Jezimiel Gwen Panganiban
                 </h2>
                 <p className="text-sm md:text-base mb-4">
-                  I am a 4th-year student with a strong interest in technology
+                  I am a 4th-year BSIT student with a strong interest in technology
                   and how it can be applied to solve real-world problems.
                   I am passionate about learning new tools and skills that can help me 
                   improve in both academics and future career opportunities.
