@@ -93,7 +93,7 @@ const App = () => {
           {/* Card 3 */}
           <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
             <img
-              src=""
+              src="Jb_Gapas.png"
               alt="John Benedict Gapas"
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
@@ -101,7 +101,8 @@ const App = () => {
               John Benedict Gapas
             </h2>
             <p className="text-sm md:text-base mb-4">
-              Add about yourself here.
+              I’m a 4th-year student at Pamantasan ng Cabuyao. I enjoy cycling, running, gaming, 
+              and watching movies and anime. I also have basic skills in web design and love exploring new ways to learn and grow.
             </p>
           </div>
 
