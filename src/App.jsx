@@ -63,7 +63,7 @@ const App = () => {
           {/* Card 1 */}
           <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
             <img
-              src=""
+              src="sheweliz.png"
               alt="Sheweliz Antinero"
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
@@ -71,7 +71,9 @@ const App = () => {
               Sheweliz Antinero
             </h2>
             <p className="text-sm md:text-base mb-4">
-              Add about yourself here.
+              I'm a 4th-year BSIT student at Pamantasan ng Cabuyao. 
+              My hobbies are hiking and watching movies. 
+              I have skills in web design and enjoy learning new technologies to expand my knowledge in development.
             </p>
           </div>
 
