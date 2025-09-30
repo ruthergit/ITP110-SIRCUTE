@@ -159,15 +159,15 @@ const App = () => {
               {/* Card 7 */}
               <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
                 <img
-                  src=""
+                  src="bri.jpg"
                   alt="Brian Ravanera"
                   className="w-32 h-32 object-cover border rounded-full mb-4"
                 />
                 <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
                   Brian Ravanera
                 </h2>
-                <p className="text-sm md:text-base mb-4">
-                  Add about yourself here.
+                <p className="text-sm md:text-base mb-4 text-justify">
+                  I love to cook, which means I find joy in the process of creation, preparing delicious food, and sharing that nourishment with others. I also enjoy playing online games when I'm free, which points to my energetic side that seeks fun, challenges, and lighthearted engagement. Finally, I love Scuderia Ferrari one of the F1 team, embracing a love for speed, history, and the thrilling competition of Formula 1.
                 </p>
               </div>
             </>
