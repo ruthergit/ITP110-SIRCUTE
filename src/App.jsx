@@ -78,7 +78,7 @@ const App = () => {
           {/* Card 2 */}
           <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
             <img
-              src=""
+              src="ruther.png"
               alt="Ruther Berino"
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
@@ -86,7 +86,8 @@ const App = () => {
               Ruther Berino
             </h2>
             <p className="text-sm md:text-base mb-4">
-              Add about yourself here.
+              I'm a 4th-year student at Pamantasan ng Cabuyao. I enjoy watching
+              anime and have skills to coding.
             </p>
           </div>
 
@@ -101,8 +102,10 @@ const App = () => {
               John Benedict Gapas
             </h2>
             <p className="text-sm md:text-base mb-4">
-              I’m a 4th-year student at Pamantasan ng Cabuyao. I enjoy cycling, running, gaming, 
-              and watching movies and anime. I also have basic skills in web design and love exploring new ways to learn and grow.
+              I’m a 4th-year student at Pamantasan ng Cabuyao. I enjoy cycling,
+              running, gaming, and watching movies and anime. I also have basic
+              skills in web design and love exploring new ways to learn and
+              grow.
             </p>
           </div>
 
@@ -114,7 +117,7 @@ const App = () => {
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
             <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
-             Michelle J. Loberiano
+              Michelle J. Loberiano
             </h2>
             <p className="text-sm md:text-base mb-4 text-justify">
               A 4th. Year BSIT student at Pamantasan ng Cabuyao. My hobbies are
@@ -130,7 +133,7 @@ const App = () => {
               {/* Card 5 */}
               <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
                 <img
-                  src=""
+                  src="liz.png"
                   alt="Liezel Paciente"
                   className="w-32 h-32 object-cover border rounded-full mb-4"
                 />
@@ -138,7 +141,9 @@ const App = () => {
                   Liezel Paciente
                 </h2>
                 <p className="text-sm md:text-base mb-4">
-                  Add about yourself here.
+                  A 4th year, BSIT student at Pamantasan ng Cabuyao. I love
+                  reading, and watching k-drama. I have a skills in
+                  web-development, particulary in MySQL and PHP.
                 </p>
               </div>
 
@@ -153,10 +158,11 @@ const App = () => {
                   Jezimiel Gwen Panganiban
                 </h2>
                 <p className="text-sm md:text-base mb-4">
-                  I am a 4th-year BSIT student with a strong interest in technology
-                  and how it can be applied to solve real-world problems.
-                  I am passionate about learning new tools and skills that can help me 
-                  improve in both academics and future career opportunities.
+                  I am a 4th-year BSIT student with a strong interest in
+                  technology and how it can be applied to solve real-world
+                  problems. I am passionate about learning new tools and skills
+                  that can help me improve in both academics and future career
+                  opportunities.
                 </p>
               </div>
 
