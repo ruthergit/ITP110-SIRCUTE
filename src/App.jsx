@@ -1,16 +1,14 @@
 import { useState, useRef, useEffect } from "react";
-import About from "./About";
 import { Bell, MapPin, Phone, Mail } from "lucide-react";
 import Footer from "./Footer";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("home");
+  const [showMore, setShowMore] = useState(false);
 
- 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
-
 
   useEffect(() => {
     const refs = {
@@ -27,14 +25,14 @@ const App = () => {
 
   const renderSection = () => (
     <>
-      {/* Home Header */}
+      {/* Home Section */}
       <header ref={homeRef} className="flex flex-col md:flex-row flex-1">
         <div className="w-full md:w-1/2 h-60 md:h-auto">
-         <img
-                  className='w-full h-full object-cover'
-                  src="https://imgs.search.brave.com/8g0_RUz4jnlo-C0Rp-iYmC_HubBE89HtPJhwEZfdD1I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uZXdz/aW5mby5pbnF1aXJl/ci5uZXQvZmlsZXMv/MjAyNS8wMi8yMDQ4/cHgtUG5DX0JhZ29u/Z19DYWJ1eWFvX0hh/bGwtMTIwMHg4MjYu/anBn"
-                  alt="Campus"
-                />
+          <img
+            className="w-full h-full object-cover"
+            src="https://imgs.search.brave.com/8g0_RUz4jnlo-C0Rp-iYmC_HubBE89HtPJhwEZfdD1I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uZXdz/aW5mby5pbnF1aXJl/ci5uZXQvZmlsZXMv/MjAyNS8wMi8yMDQ4/cHgtUG5DX0JhZ29u/Z19DYWJ1eWFvX0hh/bGwtMTIwMHg4MjYu/anBn"
+            alt="Campus"
+          />
         </div>
         <div className="w-full md:w-1/2 bg-green-700 flex flex-col items-center justify-center p-6 md:p-12 text-center">
           <div className="text-center mb-6">
@@ -52,8 +50,11 @@ const App = () => {
         </div>
       </header>
 
-      {/* About Us Header (kept as-is) */}
-      <header ref={aboutRef} className="px-6 py-12 bg-white text-gray-800 mt-12">
+      {/* About Us Section */}
+      <header
+        ref={aboutRef}
+        className="px-6 py-12 bg-white text-gray-800 mt-12"
+      >
         <h2 className="text-2xl md:text-3xl font-bold text-green-700 text-center mb-10">
           ABOUT US
         </h2>
@@ -62,74 +63,144 @@ const App = () => {
           {/* Card 1 */}
           <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
             <img
-              src="https://via.placeholder.com/150"
-              alt="About 1"
+              src=""
+              alt="Sheweliz Antinero"
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
-            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">John Doe</h2>
+            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
+              Sheweliz Antinero
+            </h2>
             <p className="text-sm md:text-base mb-4">
-              We are a dedicated group of learners, working together to build innovative and meaningful solutions.
+              Add about yourself here.
             </p>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
             <img
-              src="https://via.placeholder.com/150"
-              alt="About 2"
+              src=""
+              alt="Ruther Berino"
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
-            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">John Doe</h2>
+            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
+              Ruther Berino
+            </h2>
             <p className="text-sm md:text-base mb-4">
-              We are a dedicated group of learners, working together to build innovative and meaningful solutions.
+              Add about yourself here.
             </p>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
             <img
-              src="https://via.placeholder.com/150"
-              alt="About 3"
+              src=""
+              alt="John Benedict Gapas"
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
-            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">John Doe</h2>
+            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
+              John Benedict Gapas
+            </h2>
             <p className="text-sm md:text-base mb-4">
-              We are a dedicated group of learners, working together to build innovative and meaningful solutions.
+              Add about yourself here.
             </p>
           </div>
 
           {/* Card 4 */}
           <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
             <img
-              src="https://via.placeholder.com/150"
-              alt="About 4"
+              src="mich.jpg"
+              alt="Michelle J. Loberiano"
               className="w-32 h-32 object-cover border rounded-full mb-4"
             />
-            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">John Doe</h2>
-            <p className="text-sm md:text-base mb-4">
-              We are a dedicated group of learners, working together to build innovative and meaningful solutions.
+            <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
+             Michelle J. Loberiano
+            </h2>
+            <p className="text-sm md:text-base mb-4 text-justify">
+              A 4th. Year BSIT student at Pamantasan ng Cabuyao. My hobbies are
+              cooking, watching movies, and graphic designing. I am also
+              passionate about technology and its impact on society. My skills
+              include web development, UI/UX design, and digital marketing.
             </p>
           </div>
+
+          {/* Extra cards appear only if showMore is true */}
+          {showMore && (
+            <>
+              {/* Card 5 */}
+              <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
+                <img
+                  src=""
+                  alt="Liezel Paciente"
+                  className="w-32 h-32 object-cover border rounded-full mb-4"
+                />
+                <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
+                  Liezel Paciente
+                </h2>
+                <p className="text-sm md:text-base mb-4">
+                  Add about yourself here.
+                </p>
+              </div>
+
+              {/* Card 6 */}
+              <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
+                <img
+                  src=""
+                  alt="Gwen Panganiban"
+                  className="w-32 h-32 object-cover border rounded-full mb-4"
+                />
+                <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
+                  Gwen Panganiban
+                </h2>
+                <p className="text-sm md:text-base mb-4">
+                  Add about yourself here.
+                </p>
+              </div>
+
+              {/* Card 7 */}
+              <div className="bg-white p-6 border rounded-lg shadow-md flex flex-col items-center text-center h-full">
+                <img
+                  src=""
+                  alt="Brian Ravanera"
+                  className="w-32 h-32 object-cover border rounded-full mb-4"
+                />
+                <h2 className="text-green-700 font-bold text-lg md:text-xl mb-2">
+                  Brian Ravanera
+                </h2>
+                <p className="text-sm md:text-base mb-4">
+                  Add about yourself here.
+                </p>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="flex justify-center mt-8">
-          <button className="px-6 py-2 border-2 border-green-700 bg-green-700 text-white font-bold rounded hover:bg-green-350 transition">
-            MORE
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className="px-6 py-2 border-2 border-green-700 bg-green-700 text-white font-bold rounded hover:bg-green-600 transition"
+          >
+            {showMore ? "SHOW LESS" : "MORE"}
           </button>
         </div>
       </header>
 
-      {/* Contact Header */}
+      {/* Contact Section */}
       <header ref={contactRef} className="px-6 py-12 mt-10 mb-12">
         <div className="max-w-6xl mx-auto border rounded-lg overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-6 flex flex-col justify-start bg-white">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-green-700 text-center md:text-left">CONTACT US</h2>
-              <p className="mb-4 text-center md:text-left">Fill up the form to connect to our team.</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-green-700 text-center md:text-left">
+                CONTACT US
+              </h2>
+              <p className="mb-4 text-center md:text-left">
+                Fill up the form to connect to our team.
+              </p>
               <div className="space-y-3 text-center md:text-left mt-4">
                 <div className="flex items-center gap-2 justify-center md:justify-start">
                   <MapPin className="w-5 h-5 text-green-700" />
-                  <span>Katapatan Homes, Brgy.Banay-Banay, Cabuyao, Laguna</span>
+                  <span>
+                    Katapatan Homes, Brgy.Banay-Banay, Cabuyao, Laguna
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 justify-center md:justify-start">
                   <Phone className="w-5 h-5 text-green-700" />
@@ -147,22 +218,41 @@ const App = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block mb-1 font-semibold">Name:</label>
-                    <input type="text" className="w-full md:w-full p-3 border rounded" placeholder="Your Name" />
+                    <input
+                      type="text"
+                      className="w-full md:w-full p-3 border rounded"
+                      placeholder="Your Name"
+                    />
                   </div>
                   <div>
                     <label className="block mb-1 font-semibold">Email:</label>
-                    <input type="email" className="w-full md:w-full p-3 border rounded" placeholder="Your Email" />
+                    <input
+                      type="email"
+                      className="w-full md:w-full p-3 border rounded"
+                      placeholder="Your Email"
+                    />
                   </div>
                 </div>
                 <div>
                   <label className="block mb-1 font-semibold">Subject:</label>
-                  <input type="text" className="w-full p-3 border rounded" placeholder="Subject" />
+                  <input
+                    type="text"
+                    className="w-full p-3 border rounded"
+                    placeholder="Subject"
+                  />
                 </div>
                 <div>
                   <label className="block mb-1 font-semibold">Message:</label>
-                  <textarea rows="6" className="w-full p-3 border rounded" placeholder="Your Message"></textarea>
+                  <textarea
+                    rows="6"
+                    className="w-full p-3 border rounded"
+                    placeholder="Your Message"
+                  ></textarea>
                 </div>
-                <button type="submit" className="w-full py-3 bg-green-600 text-white font-bold rounded hover:bg-green-500 transition">
+                <button
+                  type="submit"
+                  className="w-full py-3 bg-green-600 text-white font-bold rounded hover:bg-green-500 transition"
+                >
                   SUBMIT
                 </button>
               </form>
@@ -175,16 +265,52 @@ const App = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
- <header className="h-[60px] flex bg-green-900 text-white justify-between items-center px-6 font-bold">
+      {/* Sticky Header */}
+      <header className="h-[60px] flex bg-green-900 text-white justify-between items-center px-6 font-bold sticky top-0 z-50 shadow">
         <h1 className="text-xl">GROUP 4</h1>
+
+        {/* Navigation */}
         <div className="gap-5 flex justify-center items-center">
-          <button onClick={() => setActiveSection("home")}>Home</button>
-          <button onClick={() => setActiveSection("about")}>About</button>
-          <button onClick={() => setActiveSection("contact")}>Contacts</button>
+          <button
+            onClick={() => setActiveSection("home")}
+            className={`relative pb-1 transition ${
+              activeSection === "home"
+                ? "after:w-full text-yellow-300"
+                : "after:w-0 hover:text-yellow-300"
+            } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-yellow-300 after:transition-all after:duration-300`}
+          >
+            Home
+          </button>
+          <button
+            onClick={() => setActiveSection("about")}
+            className={`relative pb-1 transition ${
+              activeSection === "about"
+                ? "after:w-full text-yellow-300"
+                : "after:w-0 hover:text-yellow-300"
+            } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-yellow-300 after:transition-all after:duration-300`}
+          >
+            About
+          </button>
+          <button
+            onClick={() => setActiveSection("contact")}
+            className={`relative pb-1 transition ${
+              activeSection === "contact"
+                ? "after:w-full text-yellow-300"
+                : "after:w-0 hover:text-yellow-300"
+            } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-yellow-300 after:transition-all after:duration-300`}
+          >
+            Contacts
+          </button>
         </div>
+
+        {/* Right Side Icons */}
         <div className="flex items-center gap-4">
           <Bell className="w-6 h-6" />
-          <img src="https://www.pngall.com/wp-content/uploads/5/Profile.png" alt="Profile" className="w-10 h-10 rounded-full object-cover" />
+          <img
+            src="https://www.pngall.com/wp-content/uploads/5/Profile.png"
+            alt="Profile"
+            className="w-10 h-10 rounded-full object-cover"
+          />
         </div>
       </header>
 
