@@ -5,16 +5,26 @@ import Footer from "./Footer";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
+import MissionVision from "./MissionVision";
+import Gallery from "./Gallery";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
+  const missionVisionRef = useRef(null);
+  const galleryRef = useRef(null);
   const contactRef = useRef(null);
 
   useEffect(() => {
-    const refs = { home: homeRef, about: aboutRef, contact: contactRef };
+    const refs = {
+      home: homeRef,
+      about: aboutRef,
+      missionVision: missionVisionRef,
+      gallery: galleryRef,
+      contact: contactRef,
+    };
     const ref = refs[activeSection];
     if (ref?.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
@@ -38,6 +48,7 @@ const App = () => {
           >
             Home
           </button>
+
           <button
             onClick={() => setActiveSection("about")}
             className={`relative pb-1 transition ${
@@ -48,6 +59,29 @@ const App = () => {
           >
             About
           </button>
+
+          <button
+            onClick={() => setActiveSection("missionVision")}
+            className={`relative pb-1 transition ${
+              activeSection === "missionVision"
+                ? "after:w-full text-yellow-300"
+                : "after:w-0 hover:text-yellow-300"
+            } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-yellow-300 after:transition-all after:duration-300`}
+          >
+            Mission & Vision
+          </button>
+
+          <button
+            onClick={() => setActiveSection("gallery")}
+            className={`relative pb-1 transition ${
+              activeSection === "gallery"
+                ? "after:w-full text-yellow-300"
+                : "after:w-0 hover:text-yellow-300"
+            } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-yellow-300 after:transition-all after:duration-300`}
+          >
+            Gallery
+          </button>
+
           <button
             onClick={() => setActiveSection("contact")}
             className={`relative pb-1 transition ${
@@ -73,6 +107,8 @@ const App = () => {
       {/* Sections */}
       <Home homeRef={homeRef} />
       <AboutUs aboutRef={aboutRef} />
+      <MissionVision missionVisionRef={missionVisionRef} />
+      <Gallery galleryRef={galleryRef} />
       <ContactUs contactRef={contactRef} />
 
       <Footer />
