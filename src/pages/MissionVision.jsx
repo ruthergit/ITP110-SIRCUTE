@@ -25,8 +25,8 @@ const MissionVision = ({ missionVisionRef }) => {
       {/* Cards container */}
       <div className="flex flex-col md:flex-row gap-8 max-w-6xl w-full relative z-10">
         {/* Vision Card */}
-        <div className="flex-1 bg-white border-2 border-green-300 rounded-2xl p-10 flex flex-col justify-between shadow-md hover:shadow-lg transition-all duration-300">
-          <h3 className="text-2xl font-semibold text-green-800 mb-6 text-center uppercase tracking-wide">
+        <div className="flex-1 bg-white border-2 border-green-300 rounded-2xl p-10 flex flex-col justify-between shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:border-green-500 hover:bg-green-50">
+          <h3 className="text-2xl font-semibold text-green-800 mb-6 text-center uppercase tracking-wide transition-colors duration-300 group-hover:text-green-900">
             Vision
           </h3>
           <p className="text-gray-700 text-center leading-relaxed text-lg">
@@ -37,8 +37,8 @@ const MissionVision = ({ missionVisionRef }) => {
         </div>
 
         {/* Mission Card */}
-        <div className="flex-1 bg-white border-2 border-green-300 rounded-2xl p-10 flex flex-col justify-between shadow-md hover:shadow-lg transition-all duration-300">
-          <h3 className="text-2xl font-semibold text-green-800 mb-6 text-center uppercase tracking-wide">
+        <div className="flex-1 bg-white border-2 border-green-300 rounded-2xl p-10 flex flex-col justify-between shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:border-green-500 hover:bg-green-50">
+          <h3 className="text-2xl font-semibold text-green-800 mb-6 text-center uppercase tracking-wide transition-colors duration-300 group-hover:text-green-900">
             Mission
           </h3>
           <p className="text-gray-700 text-center leading-relaxed text-lg">
@@ -52,8 +52,8 @@ const MissionVision = ({ missionVisionRef }) => {
 
       {/* Institutional Core Values */}
       <div className="mt-10 max-w-4xl w-full relative z-10">
-        <div className="bg-white border-2 border-green-300 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center">
-          <h3 className="text-2xl font-semibold text-green-800 mb-4 uppercase tracking-wide">
+        <div className="bg-white border-2 border-green-300 rounded-2xl p-8 shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:border-green-500 hover:bg-green-50 text-center">
+          <h3 className="text-2xl font-semibold text-green-800 mb-4 uppercase tracking-wide transition-colors duration-300 group-hover:text-green-900">
             Institutional Core Values
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
