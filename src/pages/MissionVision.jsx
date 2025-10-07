@@ -4,21 +4,32 @@ const MissionVision = ({ missionVisionRef }) => {
   return (
     <div
       ref={missionVisionRef}
-      className="min-h-screen bg-gray-100 flex flex-col items-center justify-start px-6 py-12"
+      className="relative flex flex-col items-center justify-start px-6 py-8 bg-gradient-to-b from-green-50 to-white overflow-hidden"
     >
-      {/* Section Title */}
-      <h2 className="text-3xl font-bold text-green-900 mb-12 text-center">
+      {/* Background Logo */}
+      <div
+        className="absolute inset-0 bg-center bg-no-repeat bg-contain opacity-5 pointer-events-none"
+        style={{
+          backgroundImage: "url('/pnc-logo.png')", // Make sure the image is in public folder
+          backgroundSize: "60%",
+          backgroundPosition: "center",
+        }}
+      ></div>
+
+      {/* Title */}
+      <h2 className="text-4xl font-bold text-green-900 mb-4 tracking-wide text-center relative z-10">
         PnC Vision & Mission
       </h2>
+      <div className="w-24 h-1 bg-green-600 mb-10 rounded-full relative z-10"></div>
 
-      {/* Cards Container */}
-      <div className="flex flex-col md:flex-row gap-8 max-w-5xl w-full">
+      {/* Cards container */}
+      <div className="flex flex-col md:flex-row gap-8 max-w-6xl w-full relative z-10">
         {/* Vision Card */}
-        <div className="bg-white shadow-md rounded-lg p-8 flex-1">
-          <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">
+        <div className="flex-1 bg-white border-2 border-green-300 rounded-2xl p-10 flex flex-col justify-between shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 className="text-2xl font-semibold text-green-800 mb-6 text-center uppercase tracking-wide">
             Vision
           </h3>
-          <p className="text-gray-700 text-center">
+          <p className="text-gray-700 text-center leading-relaxed text-lg">
             A premier institution of higher learning in Region IV, developing
             globally-competitive and value-laden professionals and leaders
             instrumental to community development and nation-building.
@@ -26,15 +37,32 @@ const MissionVision = ({ missionVisionRef }) => {
         </div>
 
         {/* Mission Card */}
-        <div className="bg-white shadow-md rounded-lg p-8 flex-1">
-          <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">
+        <div className="flex-1 bg-white border-2 border-green-300 rounded-2xl p-10 flex flex-col justify-between shadow-md hover:shadow-lg transition-all duration-300">
+          <h3 className="text-2xl font-semibold text-green-800 mb-6 text-center uppercase tracking-wide">
             Mission
           </h3>
-          <p className="text-gray-700 text-center">
+          <p className="text-gray-700 text-center leading-relaxed text-lg">
             As an institution of higher learning, UC (PnC) is committed to equip
             individuals with knowledge, skills, and values that will enable them
             to achieve their professional goals & provide leadership and service
             for national development.
+          </p>
+        </div>
+      </div>
+
+      {/* Institutional Core Values */}
+      <div className="mt-10 max-w-4xl w-full relative z-10">
+        <div className="bg-white border-2 border-green-300 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center">
+          <h3 className="text-2xl font-semibold text-green-800 mb-4 uppercase tracking-wide">
+            Institutional Core Values
+          </h3>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            As a God-fearing institution respecting multi-faith of people, PnC
+            adheres to the following core values:{" "}
+            <span className="font-semibold text-green-800">
+              Personal Dignity, Nurturing Community, and Commitment to
+              Excellence.
+            </span>
           </p>
         </div>
       </div>
