@@ -1,5 +1,3 @@
-import { useRef } from "react";
-
 const Home = ({ homeRef }) => {
   return (
     <header ref={homeRef} className="flex flex-col md:flex-row flex-1">
@@ -13,11 +11,12 @@ const Home = ({ homeRef }) => {
       <div className="w-full md:w-1/2 bg-green-700 flex flex-col items-center justify-center p-6 md:p-12 text-center">
         <div className="text-center mb-6">
           <p className="text-white font-bold text-2xl md:text-3xl">
-            WELCOME TO <span className="text-yellow-300">GROUP 4</span>!
+            Welcome to{" "}
+            <span className="text-yellow-300">Pamantasan ng Cabuyao</span>!
           </p>
           <p className="text-white text-lg md:text-xl mt-2">
-            Learning together, achieving together, and building a future
-            through teamwork and dedication.
+            Striving for excellence together, fostering learning, teamwork, and
+            dedication for a brighter future.
           </p>
         </div>
         <button className="px-5 py-3 border-2 border-white text-white font-bold rounded hover:bg-white/10 transition">
