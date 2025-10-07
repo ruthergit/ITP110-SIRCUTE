@@ -20,7 +20,7 @@ const Gallery = ({ galleryRef }) => {
         {/* Card 1 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/46/Pamantasan_ng_Cabuyao_main_building.jpg"
+            src="main.jpg"
             alt="Campus Building"
             className="w-full h-56 object-cover"
           />
@@ -32,19 +32,19 @@ const Gallery = ({ galleryRef }) => {
         {/* Card 2 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/29/PnC_Auditorium.jpg"
+            src="bch.jpg"
             alt="University Auditorium"
             className="w-full h-56 object-cover"
           />
           <p className="p-4 text-center text-gray-700 font-medium">
-            University Auditorium
+            Bagong Cabuyao Hall
           </p>
         </div>
 
         {/* Card 3 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/5d/PnC_Library.jpg"
+            src="library.jpg"
             alt="Campus Library"
             className="w-full h-56 object-cover"
           />
@@ -56,7 +56,7 @@ const Gallery = ({ galleryRef }) => {
         {/* Card 4 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/8/87/PnC_Students.jpg"
+            src="studentact.jpg"
             alt="Students Activity"
             className="w-full h-56 object-cover"
           />
@@ -68,19 +68,19 @@ const Gallery = ({ galleryRef }) => {
         {/* Card 5 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a4/PnC_Sports.jpg"
+            src="ccs.jpg"
             alt="Sports Facilities"
             className="w-full h-56 object-cover"
           />
           <p className="p-4 text-center text-gray-700 font-medium">
-            Sports Facilities
+            Sports Activities
           </p>
         </div>
 
         {/* Card 6 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/1/15/PnC_Events.jpg"
+            src="univevents.jpg"
             alt="University Events"
             className="w-full h-56 object-cover"
           />
@@ -92,7 +92,7 @@ const Gallery = ({ galleryRef }) => {
         {/* Card 7 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/7c/PnC_Lab.jpg"
+            src="comlab.jpg"
             alt="Laboratory Facilities"
             className="w-full h-56 object-cover"
           />
@@ -104,12 +104,12 @@ const Gallery = ({ galleryRef }) => {
         {/* Card 8 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f7/PnC_Campus_Garden.jpg"
+            src="hangout.jpg"
             alt="Campus Garden"
             className="w-full h-56 object-cover"
           />
           <p className="p-4 text-center text-gray-700 font-medium">
-            Campus Garden
+            Hangout Spot
           </p>
         </div>
       </div>
