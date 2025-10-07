@@ -6,7 +6,6 @@ const Gallery = ({ galleryRef }) => {
       ref={galleryRef}
       className="min-h-screen bg-white flex flex-col items-center justify-start px-6 py-12"
     >
-      {/* Gallery Title */}
       <h2 className="text-3xl font-bold text-green-900 mb-6 text-center">
         PnC Gallery
       </h2>
@@ -14,10 +13,7 @@ const Gallery = ({ galleryRef }) => {
         Explore some highlights from Pamantasan ng Cabuyao — our campus,
         activities, and events.
       </p>
-
-      {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-        {/* Card 1 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="main.jpg"
@@ -29,7 +25,6 @@ const Gallery = ({ galleryRef }) => {
           </p>
         </div>
 
-        {/* Card 2 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="bch.jpg"
@@ -41,7 +36,6 @@ const Gallery = ({ galleryRef }) => {
           </p>
         </div>
 
-        {/* Card 3 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="library.jpg"
@@ -53,7 +47,6 @@ const Gallery = ({ galleryRef }) => {
           </p>
         </div>
 
-        {/* Card 4 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="studentact.jpg"
@@ -65,7 +58,6 @@ const Gallery = ({ galleryRef }) => {
           </p>
         </div>
 
-        {/* Card 5 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="ccs.jpg"
@@ -77,7 +69,6 @@ const Gallery = ({ galleryRef }) => {
           </p>
         </div>
 
-        {/* Card 6 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="univevents.jpg"
@@ -89,7 +80,6 @@ const Gallery = ({ galleryRef }) => {
           </p>
         </div>
 
-        {/* Card 7 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="comlab.jpg"
@@ -101,7 +91,6 @@ const Gallery = ({ galleryRef }) => {
           </p>
         </div>
 
-        {/* Card 8 */}
         <div className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-transparent hover:border-green-500 transition-all duration-300 group hover:shadow-xl hover:scale-105 transform">
           <img
             src="hangout.jpg"

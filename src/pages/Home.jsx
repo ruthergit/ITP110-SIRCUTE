@@ -1,7 +1,7 @@
 const Home = ({ homeRef }) => {
   return (
     <header ref={homeRef} className="flex flex-col md:flex-row flex-1">
-      <div className="w-full md:w-1/2 h-60 md:h-auto">
+      <div className="w-full md:w-1/2 h-80 md:h-auto">
         <img
           className="w-full h-full object-cover"
           src="https://imgs.search.brave.com/8g0_RUz4jnlo-C0Rp-iYmC_HubBE89HtPJhwEZfdD1I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uZXdz/aW5mby5pbnF1aXJl/ci5uZXQvZmlsZXMv/MjAyNS8wMi8yMDQ4/cHgtUG5DX0JhZ29u/Z19DYWJ1eWFvX0hh/bGwtMTIwMHg4MjYu/anBn"

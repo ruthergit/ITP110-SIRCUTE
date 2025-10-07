@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-// Import your existing page components
 import Home from "./pages/Home";
 import About from "./pages/AboutUs";
 import MissionVision from "./pages/MissionVision";
@@ -14,7 +13,6 @@ function App() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      {/* ✅ All sections shown together */}
       <main className="flex-grow pt-[100px] px-6 bg-gray-50">
         <section id="home" className=" border-b border-gray-200">
           <Home />
