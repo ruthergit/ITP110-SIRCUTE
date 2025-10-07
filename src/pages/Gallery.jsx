@@ -37,7 +37,7 @@ const Gallery = ({ galleryRef }) => {
             className="w-full h-56 object-cover"
           />
           <p className="p-4 text-center text-gray-700 font-medium">
-            Bagong Cabuyao Hall
+            Bagong Cabuyao Hall Building
           </p>
         </div>
 
